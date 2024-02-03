@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Rose Day</title>
+    <link rel="stylesheet" href="RoseDay.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>💖 Dear Ankita 💖</strong>
+                        <p>
+                            <img src="RoseDayPic.png" alt="RoseDay">
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+envelope.addEventListener('click', () => {
+    envelope.classList.toggle('flap');
+    const letter = document.querySelector('.envelope > .letter');
+    // Toggle visibility of the letter based on the flap class
+    if (envelope.classList.contains('flap')) {
+        letter.style.visibility = 'visible';
+    } else {
+        letter.style.visibility = 'hidden';
+    }
+});
+    </script>
+</body>
+</html>

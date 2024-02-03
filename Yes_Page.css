@@ -1,0 +1,87 @@
+body {
+    background-image: url('LoveBackgorund1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+    padding: 10px;
+    animation: fadeIn 1s ease-in-out;
+    background-color: rgba(255, 255, 255, 0);
+    /* Adjust the background color and opacity as needed */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.0);
+    /* Add a subtle box shadow for depth */
+}
+
+h2 {
+    font-size: 36px;
+    color: #ff1493;
+    margin-bottom: 20px;
+    animation: slideInDown 1s ease-in-out;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    animation: slideInUp 1s ease-in-out;
+}
+
+.gif-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.rounded-gif {
+    border-radius: 50px;
+    /* Adjust the border-radius value as needed */
+    overflow: hidden;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff1493;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}

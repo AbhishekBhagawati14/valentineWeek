@@ -19,10 +19,10 @@ body {
     text-align: center;
     animation: fadeIn 1s ease-in-out;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0);
     /* Adjust the background color and opacity as needed */
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0);
     /* Add a subtle box shadow for depth */
     max-width: 600px;
     /* Limit container width for better readability */
